@@ -14,7 +14,7 @@
     "main": "puritypic.js",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/lokuedo5000/puritypic.git"
+      "url": "git+https://github.com/devlwte/puritypic.git"
     },
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"

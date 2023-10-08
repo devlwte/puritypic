@@ -1,0 +1,26 @@
+{
+    "name": "puritypic",
+    "title": "PurityPic",
+    "version": "1.0.0",
+    "server": {
+      "homepage": "/",
+      "port": 3091,
+      "host": "http://localhost",
+      "pathviews": "app/views",
+      "pathpublic": "app/public"
+    },
+    "description": "PurityPic es una aplicación intuitiva y elegante diseñada para perfeccionar tus imágenes. Con PurityPic, puedes reducir el tamaño de tus fotos sin comprometer la calidad.",
+    "tags": "Image Optimization, Image Compression, Picture Clarity, Photo Enhancement, Quality Imaging, Visual Elegance, Format Conversion",
+    "main": "puritypic.js",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/lokuedo5000/puritypic.git"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Lwte",
+    "license": "MIT"
+  }
+  

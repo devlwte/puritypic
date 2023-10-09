@@ -237,7 +237,8 @@ const routes = [
         method: 'get',
         path: '/file/:img',
         handler: async (req, res) => {
-            const img = Buffer.from(req.params.img, 'base64').toString('utf-8');
+            let img = Buffer.from(req.params.img, 'base64').toString('utf-8');
+            const normalimg = decodeURI(img);
             const extName = path.extname(img);
             const contentTypes = {
                 ".css": "text/css",
@@ -254,7 +255,7 @@ const routes = [
             const contentType = contentTypes[extName] || "text/html";
 
             res.writeHead(200, { "Content-Type": contentType });
-            const nameFile = path.join(img);
+            const nameFile = path.join(normalimg);
 
             const readStream = fs.createReadStream(nameFile);
 

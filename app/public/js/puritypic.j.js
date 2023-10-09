@@ -129,8 +129,9 @@ kit.onDOMReady(async () => {
                     });
                     // add dom
                     const getNames = file.name.slice(0, (file.name.length - kit.extname(file.path).length));
+                    
                     img_list.innerHTML += `<div class="app-col">
-                                                <div class="img-select z-depth-2" style="background-image: url(/file/${btoa(file.path)});">
+                                                <div class="img-select z-depth-2" style="background-image: url(/file/${btoa(encodeURI(file.path))});">
                                                     <div class="progress-img progress--${getNames}"></div>
                                                 </div>
                                                 <div class="title-all">

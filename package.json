@@ -25,7 +25,8 @@
     "@npmcli/fs": "^3.1.0",
     "sqlite3": "^5.1.6",
     "moment": "^2.29.4",
-    "sharp": "^0.32.6"
+    "sharp": "^0.32.6",
+    "uuid": "^9.0.1"
   },
   "webPreferences": {
     "nodeIntegration": true,
